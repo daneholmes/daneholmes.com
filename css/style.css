@@ -305,9 +305,15 @@ button:hover {
 	background: #7a8f48;
 }
 
+.grecaptcha-badge { 
+	visibility: hidden;
+}
+
 .form {
 	text-align: center;
 }
+
+
 
 .external-link:after {
 	content: '';
