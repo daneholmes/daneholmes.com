@@ -219,6 +219,7 @@ p {
 	transition: color 0.25s ease-out;
 	padding: 2px 3px;
 	margin-bottom: 3px;
+	
 }
 
 .link::before {
@@ -283,7 +284,7 @@ textarea {
 	min-height: 5.7em;
 }
 
-input[type=submit] {
+button {
 	background: #90a955;
 	font-size: 1.5em;
 	margin: 0 auto;
@@ -300,7 +301,7 @@ input[type=submit] {
 	cursor: pointer;
 }
 
-input[type=submit]:hover {
+button:hover {
 	background: #7a8f48;
 }
 
