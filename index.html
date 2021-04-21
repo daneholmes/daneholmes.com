@@ -51,6 +51,12 @@
 		}
 	</script>
 	<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	 <script>
+		 function onSubmit(token) {
+			 document.getElementById("contact-form").submit();
+		 }
+	 </script>
 </head>
 
 <body>
@@ -105,7 +111,7 @@
 					<textarea type="text" name="message" placeholder="Message" id="message"></textarea>
 					<br>
 					<input type="hidden" name="redirectTo" value="https://daneholmes.com">
-					<button>Submit</button>
+					<button class="g-recaptcha" data-sitekey="6LfKaJ8aAAAAAG7YDZVmkYkr33Qx3r-mUOXDDN1m" data-callback='onSubmit'>Submit</button>
 					</form>
 				</div>
 			</div>
