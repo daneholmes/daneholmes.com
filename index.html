@@ -51,12 +51,6 @@
 		}
 	</script>
 	<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	<script>
-		function onSubmit(token) {
-			document.getElementById("contact-form").submit();
-		}
-	</script>
 </head>
 
 <body>
@@ -103,13 +97,15 @@
 				<h2>Contact</h2>
 				<p>Let me know if you have questions about anything I’ve written here. Just fill out the form below. I will try my best to reply as quickly as I possibly can.</p>
 				<div class="form">
-					<form action="https://formbucket.com/f/buk_VU9EA8D8rxpqyIR4PbMkHJTy" method="POST" id="contact-form" class="topBefore" />
+					<form action="https://api.staticforms.xyz/submit" method="POST" id="contact-form" class="topBefore" />
+					<input type="hidden" name="accessKey" value="0b2eb90b-e8ba-487e-bed7-71c387b88a48">
 					<input type="text" name="name" placeholder="Name" id="name" />
 					<input type="email" name="email" placeholder="Email" id="email" />
-					<input type="text" name="subject" style="display:none">
+					<input type="text" name="honeypot" style="display: none;">
 					<textarea type="text" name="message" placeholder="Message" id="message"></textarea>
 					<br>
-					<button class="g-recaptcha" data-sitekey="6LfKaJ8aAAAAAG7YDZVmkYkr33Qx3r-mUOXDDN1m" data-callback='onSubmit'>Submit</button>
+					<input type="hidden" name="redirectTo" value="https://daneholmes.com">
+					<button>Submit</button>
 					</form>
 				</div>
 			</div>
