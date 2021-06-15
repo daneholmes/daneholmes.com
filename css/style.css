@@ -1,232 +1,151 @@
 @font-face {
-	font-family: "Cormorant-Bold";
-	src: url("../static/font/Cormorant-Bold.ttf") format("truetype");
+	font-family: "Maragsa";
+	src:
+		url('../static/font/Maragsa-Display.woff2') format('woff2'),
+		url("../static/font/Maragsa-Display.otf") format("opentype");
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Cormorant";
-	src: url("../static/font/Cormorant-Regular.ttf") format("truetype");
+	font-family: "General";
+	src:
+		url('../static/font/GeneralSans.woff2') format('woff2'),
+		url("../static/font/GeneralSans.ttf") format("truetype");
 	font-display: swap;
 }
 
-@font-face {
-	font-family: "Inter";
-	src: url("../static/font/Inter-Light.ttf") format("truetype");
-	font-display: swap;
-}
 
 html {
 	font-size: 100%;
-	font-family: Cormorant;
-	background-color: #90a955;
+	font-family: General;
+	background-color: rgb(203, 76, 78);
+	color: rgb(255, 255, 255);
 }
 
 /* ------------------------------------
    --------------- GRID ---------------
    ------------------------------------ */
-.container {
-	padding: 5em;
-	background-color: #f0efeb;
+ .container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+ }
+.header {
+	height: 100vh;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	padding: 7em 3em 3em 3em;
 }
 
-.gridArea {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 100vh auto auto auto auto auto;
-	gap: 1em 1em;
-	grid-template-areas:
-		"gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture"
-		"gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography"
-		"gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project . ."
-		"gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued"
-		"gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact"
-		"gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer";
+.post {
+	padding-bottom: 3em;
 }
 
-.gridArea-name {
-	grid-area: gridArea-name;
-	align-self: center;
-	padding-bottom: 5em;
+.top {
+	justify-content: normal;
 }
 
-.gridArea-picture {
-	grid-area: gridArea-picture;
-	padding-top: 4em;
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
 }
 
-.gridArea-biography {
-	grid-area: gridArea-biography;
+.left,
+.right {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 40%;
 }
-
-.gridArea-writing {
-	grid-area: gridArea-writing;
-}
-
-.gridArea-project {
-	grid-area: gridArea-project;
-	padding-bottom: 5em;
-}
-
-.gridArea-biography-continued {
-	grid-area: gridArea-biography-continued;
-	padding-bottom: 5em;
-}
-
-.gridArea-contact {
-	grid-area: gridArea-contact;
-	padding-bottom: 7em;
-}
-
-.gridArea-footer {
-	grid-area: gridArea-footer;
-	text-align: center;
+.right {
+	text-align: right;
 }
 
 @media only screen and (max-width: 800px) {
-	.gridArea {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: auto auto auto auto auto auto auto auto;
-		gap: 1em 1em;
-		grid-template-areas:
-			"gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture gridArea-picture"
-			"gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name gridArea-name"
-			"gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography gridArea-biography"
-			"gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing gridArea-writing"
-			"gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project gridArea-project"
-			"gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued gridArea-biography-continued"
-			"gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact gridArea-contact"
-			"gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer gridArea-footer";
-	}
 
-	.gridArea-name {
-		grid-area: gridArea-name;
-	}
-
-	.gridArea-picture {
-		grid-area: gridArea-picture;
-		margin-bottom: 2rem;
-	}
-
-	.gridArea-biography {
-		grid-area: gridArea-biography;
-		padding-bottom: 0;
-	}
-
-	.gridArea-writing {
-		grid-area: gridArea-writing;
-		padding-bottom: 1rem;
-	}
-
-	.gridArea-project {
-		grid-area: gridArea-project;
-		padding-bottom: 1rem;
-	}
-
-	.gridArea-contact {
-		grid-area: gridArea-contact;
-	}
-
-	.gridArea-footer {
-		grid-area: gridArea-footer;
-	}
-
-	.gridArea-biography-continued {
-		grid-area: gridArea-biography-continued;
-		padding-bottom: 1rem;
-	}
 }
 
 /* ------------------------------------
-   --------- FONTS & PICTURES ---------
+   --------------- FONTS --------------
    ------------------------------------ */
 h1 {
-	font-family: Cormorant-Bold;
-	font-size: 5em;
-	line-height: 1em;
-	padding-bottom: 0.5em;
-}
-
-h1 span {
-	display: block;
-}
-
-h1 span::before {
-	content: attr(data-text);
+	font-family: "Maragsa";
+	font-size: 10em;
+	text-align: center;
 }
 
 h2 {
-	font-family: Cormorant-Bold;
-	font-size: 4em;
-	line-height: 1em;
-	padding-bottom: 0.5em;
+	font-family: "Maragsa";
+	font-size: 3em;
 }
 
-p {
-	font-size: 1.9rem;
-	line-height: 2rem;
-	margin-bottom: 1.5rem;
-}
-
-.subtitle {
-	font-size: 2rem;
-	line-height: 2rem;
-}
-
-.module {
-	font-family: Inter;
-	font-size: 1.3rem;
-	padding-bottom: 2rem;
-}
-
-.title,
-.date {
-	font-family: Inter;
-	font-size: 1rem;
-	line-height: 1.2rem;
-}
-
-.date {
-	font-weight: bolder;
-	padding-bottom: 1rem;
-	font-size: 0.8rem;
-}
-
-.conclusion {
-	font-size: 4rem;
-}
-
-.socialIcons {
-	display: flex;
-	justify-content: center;
-	padding: 1em 0 10em 0;
+.bio {
+	font-size: 1.3em;
 }
 
 .copyright {
-	font-size: 1.2rem;
+	font-family: "Maragsa";
+	font-size: 2.5em;
+	margin-bottom: -0.5em;
 }
 
+.contact {
+	margin-bottom: -1.4em;
+}
+
+.work, .contact {
+	font-size: 1.2em;
+	padding: 0;
+}
+
+.details {
+	margin-top: -0.5em;
+}
 /* ------------------------------------
-   ------------- PICTURES -------------
+   -------------- LINKS ---------------
    ------------------------------------ */
-picture {
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-	z-index: 1;
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding-bottom: 1.2em;
+
+ul {
+	list-style: none;
+	padding: 0;
 }
 
-img,
-source {
-	object-fit: cover;
-	width: 100%;
-	height: 600px;
-	margin: 0 auto;
-	border-radius: 4px;
+ul>li {
+	display: inline;
+}
+
+li:not(:last-child)::after {
+	content: "\25CF";
+	margin: 0 0.2em;
+}
+
+a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	position: relative;
+}
+
+a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: rgb(255, 255, 255);
+	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	a:hover::before {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
 }
 
 /* ------------------------------------
@@ -242,7 +161,7 @@ input[type=email],
 textarea {
 	width: 100%;
 	padding: 12px;
-	border: 1px solid #000000;
+	//border: 1px solid #000000;
 	border-radius: 4px;
 	box-sizing: border-box;
 	font-size: 1.5em;
@@ -261,7 +180,7 @@ textarea {
 
 input[type=submit] {
 	width: 100%;
-	background: #90a955;
+	/* background: #90a955; */
 	font-size: 1.5em;
 	outline: 0;
 	color: #ffffff;
@@ -270,127 +189,4 @@ input[type=submit] {
 	border-radius: 4px;
 	cursor: pointer;
 	font-size: 
-}
-
-/* ------------------------------------
-   -------------- LINKS ---------------
-   ------------------------------------ */
-
-.link {
-	text-decoration: none;
-	position: relative;
-	z-index: 0;
-	display: inline-block;
-	overflow: hidden;
-	color: #000;
-	vertical-align: bottom;
-	transition: color 0.25s ease-out;
-	padding: 2px 3px;
-	margin-bottom: 3px;
-}
-
-.link::before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	transform: translateY(calc(100% - 2px));
-	width: 100%;
-	height: 100%;
-	background-color: #90a955;
-	transition: transform 0.25s ease-out;
-}
-
-.external-link:after {
-	content: "";
-	display: inline-block;
-	width: 1em;
-	height: 1rem;
-	margin-left: 0.2em;
-	background-image: url("../static/font/external-link-light.svg");
-}
-
-.socialIcons-instagram:after {
-	content: "";
-	display: inline-block;
-	width: 1.5em;
-	height: 1.5rem;
-	margin-left: 0.2em;
-	background-image: url("../static/font/instagram-light.svg");
-	visibility: visible;
-	margin-right: 0.5em;
-}
-
-.socialIcons-github:after {
-	content: "";
-	display: inline-block;
-	width: 1.5em;
-	height: 1.5rem;
-	margin-left: 0.2em;
-	background-image: url("../static/font/github-light.svg");
-	visibility: visible;
-}
-
-/* ------------------------------------
-   ------------ RESPONSIVE ------------
-   ------------------------------------ */
-@media only screen and (max-width: 800px) {
-	.module {
-		padding-bottom: 1rem;
-		margin-bottom: 0rem;
-	}
-
-	img,
-	source {
-		height: 450px;
-	}
-}
-
-/* ------------------------------------
-   ------------ DARK MODE -------------
-   ------------------------------------ */
-@media (prefers-color-scheme: dark) {
-	html {
-		background-color: #64763b;
-		color: #f0efeb;
-	}
-
-	.container {
-		background-color: #181717;
-	}
-
-	picture {
-		filter: brightness(0.9);
-	}
-
-	.link {
-		color: #f0efeb;
-	}
-
-	.link::before {
-		background-color: #64763b;
-	}
-
-	input[type=text],
-	input[type=email],
-	textarea {
-		background: #302f2f;
-	}
-
-	input[type=submit] {
-		background-color: #64763b;
-	}
-
-	.external-link:after {
-		background-image: url("../static/font/external-link-dark.svg");
-	}
-
-	.socialIcons-instagram:after {
-		background-image: url("../static/font/instagram-dark.svg");
-	}
-
-	.socialIcons-github:after {
-		background-image: url("../static/font/github-dark.svg");
-	}
 }
