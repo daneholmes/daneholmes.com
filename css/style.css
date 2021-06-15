@@ -25,11 +25,12 @@ html {
 /* ------------------------------------
    --------------- GRID ---------------
    ------------------------------------ */
- .container {
+.container {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
- }
+}
+
 .header {
 	height: 100vh;
 
@@ -61,12 +62,9 @@ html {
 	flex-direction: column;
 	width: 40%;
 }
+
 .right {
 	text-align: right;
-}
-
-@media only screen and (max-width: 800px) {
-
 }
 
 /* ------------------------------------
@@ -97,7 +95,8 @@ h2 {
 	margin-bottom: -1.4em;
 }
 
-.work, .contact {
+.work,
+.contact {
 	font-size: 1.2em;
 	padding: 0;
 }
@@ -105,6 +104,7 @@ h2 {
 .details {
 	margin-top: -0.5em;
 }
+
 /* ------------------------------------
    -------------- LINKS ---------------
    ------------------------------------ */
@@ -188,5 +188,34 @@ input[type=submit] {
 	padding: 1em 3em;
 	border-radius: 4px;
 	cursor: pointer;
-	font-size: 
+	font-size:
+}
+
+@media only screen and (max-width: 765px) {
+	
+	.header {
+		height: 1fr;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.left,
+	.right {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.left{
+		padding-bottom: 1em;
+	}
 }
