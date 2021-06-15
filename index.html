@@ -51,13 +51,22 @@
 		}
 	</script>
 	<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+
+	<script>
+		document.getElementById('change').onclick = changeColor;
+
+		function changeColor() {
+			document.body.style.color = "purple";
+			return false;
+		}
+	</script>
 </head>
 
-<body>
+<body onclick="changeColor()">
 	<div class="container">
 		<div class="header">
 			<div class="top">
-				<h1>Dane Holmes</h1>
+				<h1 id="change">Dane Holmes</h1>
 			</div>
 
 			<div class="bottom">
@@ -91,7 +100,14 @@
 			</div>
 		</div>
 	</div>
-
+	<script>
+		function changeColor() {
+			const colors = ["blue", "green"];
+			const randomcolor = Math.floor(Math.random() * colors.length);
+			
+			document.body.classList.toggle(colors[randomcolor]);
+		}
+	</script>
 
 </body>
 

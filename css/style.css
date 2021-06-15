@@ -18,9 +18,18 @@
 html {
 	font-size: 100%;
 	font-family: General;
-	background-color: rgb(203, 76, 78);
 	color: rgb(255, 255, 255);
+	background-color: rgb(203, 76, 78);
 }
+
+.blue {
+	  background-color: rgb(90, 134, 173);
+	  color: rgb(255, 255, 255);;
+	}
+	
+.green {
+	background-color: rgb(136, 176, 75);
+}	
 
 /* ------------------------------------
    --------------- GRID ---------------
