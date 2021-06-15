@@ -23,13 +23,20 @@ html {
 }
 
 .blue {
-	  background-color: rgb(90, 134, 173);
-	  color: rgb(255, 255, 255);;
+	background-color: rgb(90, 134, 173);
 	}
 	
 .green {
 	background-color: rgb(136, 176, 75);
-}	
+}
+
+.purple {
+	background-color: rgb(95, 75, 139);
+}
+
+.red {
+	background-color: rgb(203, 76, 78);
+}
 
 /* ------------------------------------
    --------------- GRID ---------------

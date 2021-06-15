@@ -62,7 +62,7 @@
 	</script>
 </head>
 
-<body onclick="changeColor()">
+<body onclick="randomizeColor()" id="box">
 	<div class="container">
 		<div class="header">
 			<div class="top">
@@ -101,14 +101,22 @@
 		</div>
 	</div>
 	<script>
-		function changeColor() {
-			const colors = ["blue", "green"];
-			const randomcolor = Math.floor(Math.random() * colors.length);
-			
-			document.body.classList.toggle(colors[randomcolor]);
+		var colors = ["rgb(90, 134, 173)", "rgb(203, 76, 78)", "rgb(136, 176, 75)", "rgb(95, 75, 139)"];
+
+		function getRandomColor() {
+			num = Math.floor(Math.random() * 4);
+			return colors[num];
+		}
+
+		function randomizeColor() {
+			currentColor = document.getElementById("box").style.backgroundColor;
+			randomColor = getRandomColor();
+			while (randomColor == currentColor) {
+				randomColor = getRandomColor();
+			}
+			document.getElementById("box").style.backgroundColor = randomColor;
 		}
 	</script>
-
 </body>
 
 </html>
