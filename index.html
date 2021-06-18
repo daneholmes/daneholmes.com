@@ -53,18 +53,18 @@
 	<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
 </head>
 
-<body onclick="randomizeColor()" id="box">
+<body class="red" onclick="setRandomColor()">
 	<div class="container">
 		<div class="header">
 			<div class="top">
-				<h1 id="change">Dane Holmes</h1>
+				<h1>Dane Holmes</h1>
 			</div>
 
 			<div class="bottom">
 
 				<div class="left">
 					<div class="bio">
-						I am a student at Northwestern University studying English literature and data science. Currently, I live in Evanston, but have previously lived in Chicago and Tokyo.
+						I am a student at Northwestern University studying English literature, computer science, and data science. Currently, I live in Evanston, but have previously lived in Chicago and Tokyo.
 					</div>
 				</div>
 
@@ -83,7 +83,7 @@
 
 					<div class="work">
 						<ul>
-							<li id="hint">Click Anywhere</li>
+							<li>Click Anywhere</li>
 							<li><a href="/work.html">Selected Work</a></li>
 							<li><a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_578dQ2x0C3Rchfg">Contact</a></li>
 						</ul>
@@ -93,24 +93,21 @@
 		</div>
 	</div>
 	<script>
-		var colors = ["rgb(90, 134, 173)", "rgb(203, 76, 78)", "rgb(136, 176, 75)", "rgb(95, 75, 139)"];
-
+		var colors = ["blue", "green", "purple", "red"];
+		
 		function getRandomColor() {
 			num = Math.floor(Math.random() * 4);
 			return colors[num];
 		}
 
-
-		function randomizeColor() {
-			currentColor = document.getElementById("box").style.backgroundColor;
+		function setRandomColor() {
+			currentColor = document.body.className;
 			randomColor = getRandomColor();
 			while (randomColor == currentColor) {
 				randomColor = getRandomColor();
 			}
-			document.getElementById("box").style.backgroundColor = randomColor;
+			document.body.className = randomColor;
 		}
-		
-		getElementById("hint").remove()
 	</script>
 </body>
 
