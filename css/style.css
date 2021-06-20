@@ -24,8 +24,8 @@ html {
 
 .blue {
 	background-color: rgb(90, 134, 173);
-	}
-	
+}
+
 .green {
 	background-color: rgb(136, 176, 75);
 }
@@ -45,6 +45,7 @@ html {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	animation: fadein 0.5s;
 }
 
 .header {
@@ -86,10 +87,22 @@ html {
 /* ------------------------------------
    --------------- FONTS --------------
    ------------------------------------ */
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 h1 {
 	font-family: "Maragsa";
 	font-size: 10em;
 	text-align: center;
+	
+
 }
 
 h2 {
@@ -208,7 +221,7 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 765px) {
-	
+
 	.header {
 		height: 1fr;
 	}
@@ -230,8 +243,8 @@ input[type=submit] {
 		flex-direction: column;
 		width: 100%;
 	}
-	
-	.left{
+
+	.left {
 		padding-bottom: 1em;
 	}
 }
