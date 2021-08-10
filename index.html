@@ -25,14 +25,14 @@
 	<meta property="og:url" content="https://daneholmes.com/">
 	<meta property="og:title" content="Hi, my name is Dane Holmes.">
 	<meta property="og:description" content="I am a student at Northwestern University studying English literature, computer science, and data science.">
-	<meta property="og:image" content="https://daneholmes.com/static/images/banner-image.jpg">
+	<!-- <meta property="og:image" content="https://daneholmes.com/static/images/banner-image.jpg"> -->
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://daneholmes.com/">
 	<meta property="twitter:title" content="Hi, my name is Dane Holmes.">
 	<meta property="twitter:description" content="I am a student at Northwestern University studying English literature, computer science, and data science.">
-	<meta property="twitter:image" content="https://daneholmes.com/static/images/banner-image.jpg">
+	<!-- <meta property="twitter:image" content="https://daneholmes.com/static/images/banner-image.jpg"> -->
 
 	<!-- Scripts / Schema -->
 	<script type="application/ld+json">
@@ -53,62 +53,421 @@
 	<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
 </head>
 
-<body class="red" onclick="setRandomColor()">
+<body>
 	<div class="container">
-		<div class="header">
-			<div class="top">
-				<h1>Dane Holmes</h1>
-			</div>
+		<div class="profile-header">
 
-			<div class="bottom">
-
-				<div class="left">
-					<div class="bio">
-						I am a student at Northwestern University studying English literature, computer science, and data science. Currently, I live in Evanston, but have previously lived in Chicago and Tokyo.
+			<!-- Picture and Profile -->
+			<div class="profile-photo-wrap">
+				<div class="profile-photo">
+					<picture>
+						<source srcset="static/images/profile-picture.avif" type="image/avif">
+						<source srcset="static/images/profile-picture.webp" type="image/webp">
+						<img src="static/images/profile-picture.jpg" alt="A picture of Dane looking at the camera in a blue suit.">
+					</picture>
+					<div class="emoji-wrap">
+						<div class="emoji">🌟</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="right">
-					<div class="copyright">
-						©2021
+			<div class="profile-info">
+				<h1>Dane Holmes</h1>
+				<p>Student in Evanston, IL</p>
+				<div class="link">
+					<a href="https://daneholmes.com">daneholmes.com</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Status Bubble -->
+		<div class="status-bubble">
+			<svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="10">
+					<rect width="26" height="10" fill="#C4C4C4"></rect>
+				</mask>
+				<g mask="url(#mask0)">
+					<g filter="url(#filter0_d)">
+						<path d="M11.5858 3.41422C12.3668 2.63317 13.6332 2.63317 14.4142 3.41422L19.6569 8.65685C21.1571 10.1571 23.192 11 25.3137 11H26V12H0V11H0.686293C2.80802 11 4.84286 10.1571 6.34315 8.65685L11.5858 3.41422Z" fill="#C4C4C4"></path>
+						<path d="M26.5 11V10.5H26H25.3137C23.3246 10.5 21.4169 9.70982 20.0104 8.3033L14.7678 3.06066C13.7915 2.08435 12.2085 2.08435 11.2322 3.06066L5.98959 8.3033C4.58307 9.70982 2.67542 10.5 0.686293 10.5H0H-0.5V11V12V12.5H0H26H26.5V12V11Z" stroke="black" stroke-opacity="0.05"></path>
+					</g>
+				</g>
+				<path d="M11.5858 3.41422C12.3668 2.63317 13.6332 2.63317 14.4142 3.41422L19.6569 8.65685C21.1571 10.1571 23.192 11 25.3137 11H26V12H0V11H0.686293C2.80802 11 4.84286 10.1571 6.34315 8.65685L11.5858 3.41422Z" fill="#fff"></path>
+				<defs>
+					<filter id="filter0_d" x="-5" y="-1.17157" width="36" height="19.1716" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+						<feOffset dy="1"></feOffset>
+						<feGaussianBlur stdDeviation="2"></feGaussianBlur>
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+						<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+						<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+					</filter>
+				</defs>
+			</svg>
+			<div class="snippet">
+				<div class="status">
+					<p>Currently looking for a post-graduation job.</p>
+				</div>
+				<div class="status-updated">
+					Aug 6, 2021
+				</div>
+			</div>
+		</div>
+
+		<!-- Section (About) -->
+		<div class="section">
+			<h2>About</h2>
+			<div class="experience">
+				<p>I am a student at Northwestern University studying English literature, computer science, and data science. Currently, I live in Evanston, but have previously lived in Chicago and Tokyo.</p>
+			</div>
+		</div>
+
+		<!-- Section (Education) -->
+		<div class="section">
+			<h2>Education</h2>
+			
+			<div class="experience">
+				<div class="duration">2019 — 2022</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://www.northwestern.edu/" target="_blank" rel="noopener noreferrer">
+							Bachelor of Arts in English Literature with a Minor in Data Science at Northwestern University
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
 					</div>
-
-					<div class="contact">
+					<div class="location">Evanston, IL</div>
+					<div class="description">
+						<p>Relevant Coursework: Data Science, Data Visualization, Statistics, Fundamentals of Computer Programming: I, II, and III</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="experience">
+				<div class="duration">2017 — 2018</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://www.ccc.edu/colleges/truman/pages/default.aspx" target="_blank" rel="noopener noreferrer">
+							Associate of the Arts at Harry S. Truman College
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="location">Chicago, IL</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Section (Professional Experience) -->
+		<div class="section">
+			<h2>Professional Experience</h2>
+			
+			<div class="experience">
+				<div class="duration">Summer 2021</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://pilotdigital.com/" target="_blank" rel="noopener noreferrer">
+							Summer Data Analyst and Web Developer at Pilot Digital﻿
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="location">Chicago, IL</div>
+					<div class="description">
 						<ul>
-							<li><a href="https://github.com/daneholmes">GitHub</a></li>
-							<li><a href="https://music.apple.com/profile/daneholmes"> Music</a></li>
-							<li><a href="https://www.instagram.com/dane.holmes">Instagram</a></li>
+							<li>Researched and compiled data reports based on findings; executed SEO strategies for three clients to increase their exposure.</li>
+							<li>Integrated backend systems to streamline billing; designed and built e-commerce websites.</li>
 						</ul>
 					</div>
-
-					<div class="work">
+				</div>
+			</div>
+			
+			<div class="experience">
+				<div class="duration">2020 — Now</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://nurecreation.com/" target="_blank" rel="noopener noreferrer">
+							Supervisor of Operations at Northwestern Recreation
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="location">Evanston, IL</div>
+					<div class="description">
 						<ul>
-							<li>Click Anywhere</li>
-							<li><a href="/portfolio.html">Selected Work</a></li>
-							<li><a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_578dQ2x0C3Rchfg">Contact</a></li>
+							<li>Supervised four employees, facilities, and fields to ensure day-to-day operations.</li>
+							<li>Enforced and maintained health standards of the facilities; ensured all members followed rules; responded to all emergencies.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="experience">
+				<div class="duration">2018 — 2020</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://www.chipublib.org/" target="_blank" rel="noopener noreferrer">
+							Cyber Navigator at Chicago Public Library
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="location">Chicago, IL</div>
+					<div class="description">
+						<ul>
+							<li>Helped more than 25 people find jobs by assisting library patrons with résumé writing, job hunting, navigating the application process, and prepping for interviews.</li>
+							<li>Worked one-on-one, on an as-needed basis, with 20 or more library patrons daily, providing technical education and assistance.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="experience">
+				<div class="duration">Summer 2018</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://www.ccc.edu/colleges/truman/pages/default.aspx" target="_blank" rel="noopener noreferrer">
+							Assistant to the Dean of Students at Harry S. Truman College
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="location">Chicago, IL</div>
+					<div class="description">
+						<ul>
+							<li>Analyzed, digitized, and cataloged over 15,000 grant documents for future reference.</li>
+							<li>Answered questions regarding services and classes; fielded student complaints, directing them as necessary.</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<script>
-		var colors = ["blue", "green", "purple", "red"];
 		
-		function getRandomColor() {
-			num = Math.floor(Math.random() * 4);
-			return colors[num];
-		}
+		<!-- Section (Professional Experience) -->
+		<div class="section">
+			<h2>Leadership and Extracurricular Involvement</h2>
+			
+			<div class="experience">
+				<div class="duration">2019 - 2021</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://www.northwesterncrew.com/" target="_blank" rel="noopener noreferrer">
+							Northwestern Crew
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="location">Evanston, IL</div>
+					<div class="description">
+						<ul>
+							<li>Researched and selected regattas; maintained roasters; organized potential national and international travel, accommodations, and food.</li>
+							<li>Planed and organized one-week spring break training trip.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="experience">
+				<div class="duration">2017 - Now</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://affixionary.com/" target="_blank" rel="noopener noreferrer">
+							Affixionary
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="description">
+						<ul>
+							<li>Engineered a dictionary website of prefixes used in English, using a LAMP stack with WordPress; responsible for server, frontend, backend development, and content.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+			
+		<!-- Section (Writing) -->
+		<div class="section">
+			<h2>Writing</h2>
 
-		function setRandomColor() {
-			currentColor = document.body.className;
-			randomColor = getRandomColor();
-			while (randomColor == currentColor) {
-				randomColor = getRandomColor();
-			}
-			document.body.className = randomColor;
-		}
-	</script>
+			<div class="page-thumbnail-link">
+				<a href="/static/files/Wealth-of-Destitution.pdf" target="_blank">
+					<div class="page-flex">
+						<div class="page-thumbnail">
+							<div class="scaled-container">
+								<p class="title">Wealth of Destitution</p>
+								<div class="preview-content">
+									<p>A train rolled through the prairie, through the grass, and through the moonlight. The land hushed with the wind and droned with cicadas.</p>
+									<p>This country’s evening chorus only came to silence, gradually, in waves, as the train pressed through. And only after the light from the window in the last car twinkled out of mind did the chorus renew with an unmarked joy. Meanwhile, shadows of what-would-be sat on the distant hills, looking on without anticipation or longing. The light from the last car never twinkled out of their minds and hearts. And inside the last car, two animals played with chance, under a shaded lamp.</p>
+									<p>Here, had even the most discerning of observers sat in the last car of this train, they would have scarcely noticed any details. Yet, eventually, observant eyes would adjust to the darkness, whose canvas was cut only by a thin light given off by the lamp. Once fully adjusted to the blackness, our observer would doubtless be surprised to see that occupying the last car was an enormous black cat sitting upon a stool. Sitting and even anxiously rubbing his paws together. Indeed, the cat must have been there the whole time. And the lamp, which hung above him, lighted his eyes amber.</p>
+									<p>Secondly, the observer would notice the two purple playing cards lying face down in front of the cat. To which his eager eyes darted towards frequently. His amber iris’s—with a very anguished look—attempting to stare through the decoration of intertwined wheat embossed on the back, to see the important symbols on the other side.</p>
+									<p>Lastly, and only if the observer followed the darting eyes of the cat, would they notice a wolf sitting motionless across the table. His shape seemed punched out of the darkness, more shadowy than the cat’s black fur, and more real than the passing wind. And though he was not lighted by the lamp, his eyes shone more keenly from the dark than the cats ever could.</p>
+									<p>Though they talked at a whisper and only made small, refined gestures they were clearly carrying on an extremely splendid conversation. Discussion bounced back-and-forth between the two when suddenly and softly the wolf asked the cat, “Please stop fretting. You will rub your paws off with your fidgeting and your eyes will grow tired. Let’s have a drink, and talk, and forget this hand for now. We still have so far to go.”</p>
+								</div>
+							</div>
+						</div>
+						<div class="page-info">
+							<div class="page-title">Wealth of Destitution</div>
+							<div class="date">Ongoing - <em>Updated August 2021</em></div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="page-thumbnail-link">
+				<a href="/static/files/Wilde-and-Stevenson-Reflect-on-the-Implications-of-London's-Growth.pdf" target="_blank">
+					<div class="page-flex">
+						<div class="page-thumbnail">
+							<div class="scaled-container">
+								<p class="title">Wilde and Stevenson Reflect on the Implications of London's Growth</p>
+								<div class="preview-content">
+									<p>During the nineteenth century, English cities experienced immense growth and change due to national industrialization. The population of cities increased as impoverished workers and their families continually moved from the rural countryside to the city to find work. This spike in density resulted in a rapid shifting of these cities’ atmospheres. Ultimately, the increase in density led to greater health risks, a shift in social stability, and perhaps most significantly, a change in community and connections. These new, modern British cities fostered an environment where individuals could hide, remain anonymous, and act invisibly—an action that the small country towns of Britain had previously prevented—leading to the association of cities as places lacking morals. The play <em>The Importance of Being Earnest</em>, by Oscar Wilde, and the novella <em>The Strange Case of Dr. Jekyll and Mr. Hyde</em>, by Robert Louis Stevenson, both capture the rise and changes of the nineteenth-century English city. Despite these works’ very different tones, their outlooks upon the English city and how the urban landscapes foster anonymity through impersonality, and freedom from the connection are very similar. While the moral repercussions of anonymity they explore are different, the two works have striking similarities, including split identities, identity switching, and social duplicity. The two stories argue that the growth of cities and the new opportunities they provide are detrimental, resulting in individuality that is easily lost or corrupted.</p>
+									<p><em>The Importance of Being Earnest</em> starts its exploration of moral misadventure and ambiguity in London, despite taking place, for the most part, in Hertfordshire. It is in London where Jack loses one identity and is given another. As a child, Jack was left, unbeknownst to him, by Miss Prim, “in the cloak-room at Victoria Station,” inside “a somewhat large, black leather hand-bag” (Wilde 2233). This excursion to the city as a child has an enormous impact upon Jack. It is in the city where a helpless child, without ever knowing it, loses his identity as Earnest. This loss, or swap, of identity is the catalyst for many of the play’s comedic elements, but also serves as a grave and subtle warning about what the city can do.</p>
+								</div>
+							</div>
+						</div>
+						<div class="page-info">
+							<div class="page-title">Wilde and Stevenson Reflect on the Implications of London's Growth</div>
+							<div class="date">June 2020</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="page-thumbnail-link">
+				<a href="/static/files/A-False-Impression.pdf" target="_blank">
+					<div class="page-flex">
+						<div class="page-thumbnail">
+							<div class="scaled-container">
+								<p class="title">A False Impression</p>
+								<div class="preview-content">
+									<p>The first thing to greet visitors at the Chicago Art Institute is the Impressionism gallery and the painting Paris Street; Rainy Day. In the world-renowned museum, filled with everything from Titans, Da Vincis, and Michelangelos to O’Keeffes and Warhols, why is the first thing people are funneled to are the Impressionists? Space, possibly? I think the reason is because the Impressionist artistic movement is one of the most revered and transformative artistic movements in history. Impressionism generally “depict[s] the natural appearances of objects by means of dabs or strokes of primary unmixed colors in order to simulate actual reflected light” ("Impressionism." 1). However, unsurprisingly, it gets much deeper than that. Impressionism may have officially started in 1874, but the twenty years of change prior to 1874 is where its soul came from (Samu 1). The young artists who would become the Impressionists started their twenty-year journey in the 1850s as a reaction to dramatic changes in the world around them. This journey and the experiences had by the innovative young future Impressionists had a major impact upon their art and the subjects they addressed through their art. But is what the Impressions addressed in their art realistic?</p>
+									<p>The first major change in the status quo of the art world that led to the rise of Impressionism was the invention of photography during the 1850s. The 1850s have since been dubbed the “golden age” of photography in Europe; intrepid photographers exploded onto the art scene and altered the definition of art forevermore. Not only did photo studios spring up rapidly, but photography quickly became respected as an art form (Daniel 1-3). This started to especially hurt professional artists who had long made their money painting portraits (Freeland 97). Portrait artists, full-time and part-time alike, had to find a new way to survive because the basic economics of art were starting to change. Not only was the photograph hurting artists’ bottom lines, but according to Carole McNamara, it was, in a way, devaluing the traditional artistic styles: “artists saw how a photograph was an immediate way to capture motion” (qtd. in “Reexamining Link” 2). Photographs were a culmination of everything that art had been striving to achieve for centuries. Photos were able to capture scenes in perfect detail—the light, depth, and shadow all were correct to the scene. It must have been scary for artists who solely painted for a living to think that their traditional methods, such as oil and watercolor, would be replaced by photographs.</p>
+								</div>
+							</div>
+						</div>
+						<div class="page-info">
+							<div class="page-title">A False Impression</div>
+							<div class="date">May 2018</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Section (Additional Information) -->
+		<div class="section">
+			<h2>Additional Information</h2>
+			<ul>
+				<li>Technical Skills: Microsoft Office, R, SQL, Stata, Tableau, PHP, JavaScript, Python, C</li>
+				<li>Awards: Phi Theta Kappa, Chicago STAR Scholarship</li>
+				<li>Interests: Bouldering, Chicago Cubs, crew, lacrosse, software development, freshwater aquariums</li>
+			</ul>
+		</div>
+		
+		<!-- Section (Contact) -->
+		<div class="section">
+			<h2>Contact</h2>
+			
+			<div class="experience">
+				<div class="duration">Email</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="mailto:d@dane.cc" target="_blank" rel="noopener noreferrer">
+							d@dane.cc
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="experience">
+				<div class="duration">LinkedIn</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://www.linkedin.com/in/daneholmes/" target="_blank" rel="noopener noreferrer">
+							daneholmes
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="experience">
+				<div class="duration">GitHub</div>
+				<div class="experience-content">
+					<div class="title">
+						<div>
+						<a class="title-link" href="https://github.com/daneholmes/" target="_blank" rel="noopener noreferrer">
+							daneholmes
+						</a>
+							<span style="white-space: nowrap; margin-left: -5px;">﻿
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z" fill="#111"></path>
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
 </body>
 
 </html>
