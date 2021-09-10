@@ -2,7 +2,7 @@
 	--dark-grey: rgb(17, 17, 17);
 	--grey: rgb(102, 102, 102);
 	--light-grey: rgb(170, 170, 170);
-	 --background-color: rgb(255, 255, 255);
+	--background-color: rgb(255, 255, 255);
 }
 
 * {
@@ -51,6 +51,13 @@ a:hover {
 	text-decoration: underline;
 }
 
+.external-link {
+	white-space: nowrap; 
+	margin-left: -1px;
+}
+.external-link:after {
+	content: url("/static/images/external-link.svg");
+}
 /* Header */
 .profile-header {
 	display: flex;
@@ -80,7 +87,7 @@ picture {
 	background-repeat: no-repeat;
 }
 
-img,
+.profile-imgage,
 source {
 	width: 92px;
 	height: 92px;
@@ -127,7 +134,7 @@ source {
 	background-color: var( --background-color);
 }
 
-.status-bubble>svg {
+.status-bubble>img {
 	position: absolute;
 	pointer-events: none;
 	top: -11px;
@@ -286,6 +293,14 @@ a.title-link {
 	display: block;
 	display: -webkit-box;
 	overflow: hidden;
+}
+
+li {
+	margin: 16px 0;
+}
+
+.description li {
+	margin: 0px 0px;
 }
 
 @media only screen and (max-width: 575px) {
