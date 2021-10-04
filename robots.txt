@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /static/icons/
+Disallow: /css/
+
+Sitemap: sitemap.xml
