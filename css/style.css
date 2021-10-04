@@ -56,7 +56,7 @@ a:hover {
 	margin-left: -1px;
 }
 .external-link:after {
-	content: url("/static/images/external-link.svg");
+	content: url("/static/icons/external-link.svg");
 }
 /* Header */
 .profile-header {
