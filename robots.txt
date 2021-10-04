@@ -1,3 +1,2 @@
 User-Agent: * 
 Allow: /
-Sitemap: http://daneholmes.com/sitemap.xml
