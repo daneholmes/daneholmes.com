@@ -18,7 +18,7 @@ html {
 	width: 100vw;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	color: var(--grey);
-	background-color: var( --background-color);
+	background-color: var(--background-color);
 }
 
 .container {
@@ -52,12 +52,14 @@ a:hover {
 }
 
 .external-link {
-	white-space: nowrap; 
+	white-space: nowrap;
 	margin-left: -1px;
 }
+
 .external-link:after {
 	content: url("/static/icons/external-link.svg");
 }
+
 /* Header */
 .profile-header {
 	display: flex;
@@ -106,7 +108,7 @@ source {
 }
 
 .emoji {
-	background-color: var( --background-color);
+	background-color: var(--background-color);
 	height: 30px;
 	line-height: 24px;
 	font-size: 16px;
@@ -131,7 +133,7 @@ source {
 	margin: 16px 0 36px;
 	padding: 18px 24px;
 	position: relative;
-	background-color: var( --background-color);
+	background-color: var(--background-color);
 }
 
 .status-bubble>img {
@@ -243,7 +245,7 @@ a.title-link {
 	-ms-user-select: none;
 	user-select: none;
 	pointer-events: none;
-	background-color: var( --background-color);
+	background-color: var(--background-color);
 }
 
 .page-thumbnail .scaled-container {
@@ -287,7 +289,8 @@ a.title-link {
 	text-decoration: underline;
 }
 
-.date, .copyright {
+.date,
+.copyright {
 	color: var(--light-grey);
 	font-weight: 300;
 	display: block;
@@ -303,7 +306,7 @@ li {
 	margin: 0px 0px;
 }
 
-.works-cited > li {
+.works-cited>li {
 	margin-bottom: 6px;
 }
 
@@ -322,7 +325,25 @@ br {
 	border-top: var(--dark-grey) solid 1px;
 }
 
-.breadcrumbs-active {
+ul.breadcrumbs {
+	list-style: none;
+}
+
+ul.breadcrumbs li {
+	display: inline;
+}
+
+ul.breadcrumbs li+li:before {
+	color: var(--grey);
+	content: "/\00a0";
+}
+
+ul.breadcrumbs li a {
+	color: var(--dark-grey);
+	text-decoration: none;
+}
+
+ul.breadcrumbs li a:hover {
 	text-decoration: underline;
 }
 

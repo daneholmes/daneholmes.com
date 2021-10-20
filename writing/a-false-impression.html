@@ -64,6 +64,28 @@
 		  "dateModified": "2021-10-04"
 		}
 	</script>
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org/", 
+		  "@type": "BreadcrumbList", 
+		  "itemListElement": [{
+			"@type": "ListItem", 
+			"position": 1, 
+			"name": "Home",
+			"item": "https://daneholmes.com"  
+		  },{
+			"@type": "ListItem", 
+			"position": 2, 
+			"name": "Writing",
+			"item": "https://daneholmes.com/writing"  
+		  },{
+			"@type": "ListItem", 
+			"position": 3, 
+			"name": "A False Impression",
+			"item": "https://daneholmes.com/writing/a-false-impression"  
+		  }]
+		}
+	</script>
 	<script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
 </head>
 
@@ -138,9 +160,11 @@
 				<h2 class="return-home"><a href="/../index.html">Home</a></h2>
 			</div>
 
-			<div class="breadcrumbs">
-				<a href="/../index.html">Home</a> » <a href="/../writing.html">Writing</a> » <a href="a-false-impression.html"  class="breadcrumbs-active">A False Impression</a>
-			</div>
+			<ul class="breadcrumbs">
+				<li><a href="../index.html">Home</a></li>
+			    <li><a href="../writing.html">Writing</a></li>
+				<li>A False Impression</li>
+			</ul> 
 			<div class="copyright">© 2021 Dane Holmes</div>
 		</div>
 	</div>
