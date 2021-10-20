@@ -287,7 +287,7 @@ a.title-link {
 	text-decoration: underline;
 }
 
-.date {
+.date, .copyright {
 	color: var(--light-grey);
 	font-weight: 300;
 	display: block;
@@ -309,6 +309,21 @@ li {
 
 br {
 	margin-bottom: 0.5em;
+}
+
+.return-home {
+	text-decoration: underline;
+	text-align: center;
+	padding-top: 2em;
+}
+
+.breadcrumbs {
+	padding: 0.25em 0;
+	border-top: var(--dark-grey) solid 1px;
+}
+
+.breadcrumbs-active {
+	text-decoration: underline;
 }
 
 @media only screen and (max-width: 575px) {
