@@ -308,6 +308,7 @@ li {
 
 .works-cited>li {
 	margin-bottom: 6px;
+	overflow-wrap: anywhere;
 }
 
 br {
