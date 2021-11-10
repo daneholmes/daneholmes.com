@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /static/icons/
 Disallow: /css/
 
-Sitemap: sitemap.xml
+Sitemap: https://daneholmes.com/sitemap.xml
