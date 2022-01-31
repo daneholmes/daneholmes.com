@@ -1,0 +1,1 @@
+<a href="<?php echo home_url(); ?>" class="return-home"><?php echo get_bloginfo( 'name' ); ?></a>
