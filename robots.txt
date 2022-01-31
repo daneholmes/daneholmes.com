@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /static/icons/
-Disallow: /css/
-
-Sitemap: https://daneholmes.com/sitemap.xml
